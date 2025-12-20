@@ -34,7 +34,6 @@ jobs:
       - name: Build Debug APK
         run: |
           cd android
-          echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
           ./gradlew assembleDebug --no-daemon
 
       - name: Upload APK
